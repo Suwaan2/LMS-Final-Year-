@@ -5,7 +5,7 @@ const LMSAceApp = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-teal-50">
+    <div className="min-h-12 bg-teal-50">
       {/* Header */}
       <header className="bg-teal-50 px-6 py-4 relative">
         <nav className="flex items-center justify-between max-w-7xl mx-auto">
@@ -14,7 +14,7 @@ const LMSAceApp = () => {
             <div className="bg-teal-600 p-2 rounded">
               <BookOpen className="h-6 w-6 text-white" />
             </div>
-            <span className="text-xl font-semibold text-teal-700">LMS Ace</span>
+            <span className="text-xl font-semibold text-teal-700">Sikshya Hub</span>
           </div>
 
           {/* Navigation Menu */}
@@ -30,6 +30,12 @@ const LMSAceApp = () => {
               className="text-gray-600 hover:text-teal-600 transition-colors duration-200"
             >
               Courses
+            </a>
+            <a 
+              href="#" 
+              className="text-gray-600 hover:text-teal-600 transition-colors duration-200"
+            >
+              Login
             </a>
             
             {/* Profile Avatar */}

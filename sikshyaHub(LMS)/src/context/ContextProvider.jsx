@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CourseCard() {
+function ContextProvider() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function CourseCard() {
   )
 }
 
-export default CourseCard
+export default ContextProvider

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code2, BookOpen, Users, Mail } from 'lucide-react';
+import { Menu, X,  BookOpen, Users, Mail } from 'lucide-react';
+import {useNavigate} from 'react-router-dom';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  // const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,7 +55,9 @@ export default function Header() {
                 <span>{item.name}</span>
               </button>
             ))}
-            <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-200 font-medium">
+            <button
+            // onClick={() => navigate('/Login.')}
+             className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-200 font-medium">
               Get Started
             </button>
           </nav>

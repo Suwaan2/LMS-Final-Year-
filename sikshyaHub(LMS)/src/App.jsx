@@ -12,6 +12,7 @@ import Footer from './components/layout/Footer.jsx'
 
 
 
+
 function App() {
   
 
@@ -25,6 +26,7 @@ function App() {
   <About/>
   <Contact/>
   <Footer/>
+
   
   </>
   )
